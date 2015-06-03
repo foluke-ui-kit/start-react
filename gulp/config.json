@@ -1,0 +1,100 @@
+{
+  "version": "0.2.3",
+  "app": {
+    "src": "./src/",
+    "build": "deploy/",
+    "startpage": "index.html"
+  },
+  "layouts": {
+    "src": "src/layouts/",
+    "srcFiles": [
+      "src/layouts/*.html",
+      "src/layouts/admin/**/*.html",
+      "src/layouts/pages/**/*.html"
+    ],
+    "srcHtml": [
+      "src/layouts/*.html",
+      "src/layouts/admin/**/*.html",
+      "src/web-components/*.html"
+    ],
+    "srcCss": [
+      "src/assets/css/**/*.css",
+      "src/layouts/inc/*.html"
+    ],
+    "dest": "./src/",
+    "notification": true,
+    "inc": "src/layouts/inc/*.html",
+    "apps": "../app/"
+  },
+  "repo": {
+    "url": "",
+    "user": "",
+    "password": ""
+  },
+  "browserSync": {
+    "baseDir": "./src",
+    "files": [
+      "./src/*.html",
+      "./src/pages/**/*.html",
+      "./src/admin/**/*.html",
+      "./src/web-components/**/*.html",
+      "./src/ng-components/**/*.html",
+      "./src/assets/**/*.css"
+    ],
+    "proxy": "",
+    "port": "8000",
+    "logLevel": "debug",
+    "timestamp": true
+  },
+  "bower": {
+    "install_dir": "package/"
+  },
+  "buildConfig": {
+    "basicFiles": [
+      "./src/*.html",
+      "./src/pages/*.html",
+      "./src/assets/**/*.*",
+      "./src/web-components/.bowerrc",
+      "./src/web-components/bower.json",
+      "./src/web-components/bower.json"
+    ],
+    "baseBuild": "builds/base-view",
+    "gulpFiles": [
+      "package.json",
+      "gulpfile.js",
+      "./gulp/**/*.*"
+    ],
+    "gulpBuild": "builds/gulp",
+    "reactFiles": [
+      "./gulp/**/*.*",
+      "./src/react-components/*.*",
+      "./src/react-components/assets/**/*.*",
+      "./src/react-components/src/**/*.*"
+    ],
+    "reactComponents": [
+      "./src/react-components/src/components/react-buttons-kit/*.jsx"
+    ],
+    "reactBuild" : "builds/react"
+  },
+  "react": {
+    "bundle_file": "components.js",
+    "dev_src": [
+      "./src/react-components/src/app-sample.jsx"
+    ],
+    "src": [
+      "./src/react-components/src/app.jsx"
+    ],
+    "dest": "./src/react-components/app/",
+    "vendor_src": [
+      "./src/react-components/src/vendors.js"
+    ]
+  },
+  "bump": {
+    "files": [
+      "package.json",
+      "gulp/config.json",
+      "bower.json",
+      "./src.react-components/bower.json"
+    ]
+  }
+}
