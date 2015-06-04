@@ -11,11 +11,12 @@ var commonsPlugin = new webpack.optimize.CommonsChunkPlugin({
 
 module.exports = {
     entry: {
-        sampleComponent: './src/public/components.jsx'
+        main: './public/components.jsx',
+        vendors: ['react','jquery']
 
     },
     output: {
-        path: './src/apps/',
+        path: './app/',
         filename: '[name].js',
         publicPath: './src/libs/'
     },

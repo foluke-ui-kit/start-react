@@ -5,13 +5,15 @@
  |--------------------------------------------------------------------------
  |
  | For up-to-date information about the options:
- |   http://www.browsersync.io/docs/options/
+ |
+ docs/options/
  |
  | There are more options than you see here, these are just the ones that are
  | set internally. See the website for more info.
  | browser-sync start --config bs-config.js
  |
  */
+
 module.exports = {
     "ui": {
         "port": 3001,
@@ -19,8 +21,14 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": false,
-    "server": ['src/'],
+    "files": ['public/*.html','app/*.js','public/css/*.css'],
+    "server": {
+        baseDir: 'public',
+        routes: {
+            "/packages": "packages",
+            "/app": "app"
+        }
+    },
     "proxy": false,
     "port": 3000,
     "middleware": false,
