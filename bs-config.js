@@ -21,8 +21,14 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": false,
-    "server": ['public/'],
+    "files": ['public/*.html','app/*.js','public/css/*.css'],
+    "server": {
+        baseDir: 'public',
+        routes: {
+            "/packages": "packages",
+            "/app": "app"
+        }
+    },
     "proxy": false,
     "port": 3000,
     "middleware": false,

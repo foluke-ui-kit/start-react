@@ -6,11 +6,10 @@ var React = require("react");
 var $ = require('jquery');
 
 /**
- * components`
+ * components sample file
  */
 
 var Sample = require('../src/libs/samples.jsx');
-
 
 React.render(<Sample />, document.getElementById('component'));
 

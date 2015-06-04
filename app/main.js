@@ -14,11 +14,10 @@ webpackJsonp([0],{
 	var $ = __webpack_require__(/*! jquery */ 157);
 	
 	/**
-	 * components`
+	 * components sample file
 	 */
 	
 	var Sample = __webpack_require__(/*! ../src/libs/samples.jsx */ 158);
-	
 	
 	React.render(React.createElement(Sample, null), document.getElementById('component'));
 	
@@ -53,8 +52,10 @@ webpackJsonp([0],{
 	    render: function () {
 	        return (
 	            React.createElement("div", null, 
-	                React.createElement("h3", null, "Component"), 
-	                React.createElement("div", {className: ""}, " A sample Component")
+	                React.createElement("h3", null, "Sample Component"), 
+	                React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel? Accusantium culpa est fuga quae vel."), 
+	                React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit? Consectetur corporis eos expedita fuga odio sunt vitae voluptates."), 
+	                React.createElement("p", null, "Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!")
 	            )
 	        );
 	    }
@@ -78,7 +79,7 @@ webpackJsonp([0],{
 	     *  optionalObject: React.PropTypes.object,
 	     *  optionalString: React.PropTypes.string,
 	     */
-	    //propTypes: {},
+	
 	
 	    /**
 	     * define misins
