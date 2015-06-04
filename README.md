@@ -6,9 +6,11 @@ A simple no fuss, bells or whistles boilerplate for creating react Components, i
 
 __Features:__
 
-NPM - Package management, scripts directives for build management  
-Browser - Sync live browser reload files including react components
-Webpack - Bundle modules and dependencies
+*NPM - Package management, scripts directives for build management. 
+
+*Browser - Sync live browser reload files including react components.  
+
+*Webpack - Bundle modules and dependencies
 
 ## Quick Start
 
