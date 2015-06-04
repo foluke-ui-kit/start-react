@@ -31,11 +31,10 @@
   "dependencies": {
     "bootstrap": "~3.3.0",
     "fontawesome": "~4.2.0",
-    "modernizer": "~2.8.2",
-    "lesshat": "~3.0.2"
+    "modernizer": "~2.8.2"
   },
   "devDependencies": {
-    "foundation-apps": "~1.0.3",
-    "solved-by-flexbox": "git@github.com:philipwalton/solved-by-flexbox.git"
+    "lesshat": "~3.0.2",
+    "basscss": "~6.1.6"
   }
 }

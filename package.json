@@ -51,5 +51,8 @@
     "url-loader": "^0.5.6",
     "watchify": "^3.2.1",
     "webpack": "^1.9.10"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }
