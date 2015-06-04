@@ -55,7 +55,12 @@ webpackJsonp([0],{
 	                React.createElement("h3", null, "Sample Component"), 
 	                React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel? Accusantium culpa est fuga quae vel."), 
 	                React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit? Consectetur corporis eos expedita fuga odio sunt vitae voluptates."), 
-	                React.createElement("p", null, "Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!")
+	                React.createElement("p", null, "Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!"), 
+	                React.createElement("p", null, 
+	                React.createElement("button", {className: "btn btn-default"}, 
+	                "Sample Button"
+	                )
+	                )
 	            )
 	        );
 	    }
