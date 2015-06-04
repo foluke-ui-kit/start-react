@@ -1,5 +1,5 @@
 # start-react
---------------
+
 
 A simple no fuss, bells or whistles boilerplate for creating react Components, it tries to stay true the idea that React is the V in MVC. Use it to build, test and package "Composable Components" that can be reused in your applications.
 
