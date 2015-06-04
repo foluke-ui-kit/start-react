@@ -67,8 +67,7 @@ var Component = React.createClass({
  - Add it to webpack config
  - Modify index.html or create a mycomponent.html
  
- 
- ### History
+### History
   
   __0.0.2__
   
@@ -82,7 +81,7 @@ var Component = React.createClass({
 
 
  
- ## TODO
+### TODO
  
 - Customizing configurations
 - ...
