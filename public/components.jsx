@@ -12,5 +12,5 @@ var $ = require('jquery');
 var Sample = require('../src/libs/samples.jsx');
 
 
-React.render(<Sample />, document.getElementById('sample'));
+React.render(<Sample />, document.getElementById('component'));
 

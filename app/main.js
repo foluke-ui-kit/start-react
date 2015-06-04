@@ -20,7 +20,7 @@ webpackJsonp([0],{
 	var Sample = __webpack_require__(/*! ../src/libs/samples.jsx */ 158);
 	
 	
-	React.render(React.createElement(Sample, null), document.getElementById('sample'));
+	React.render(React.createElement(Sample, null), document.getElementById('component'));
 	
 
 
