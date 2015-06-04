@@ -6,11 +6,11 @@ A simple no fuss, no bells, no whistles -- boilerplate for creating react Compon
 
 __Features:__
 
-*NPM - Package management, scripts directives for build management. 
+* NPM - Package management, scripts directives for build management. 
 
-*Browser - Sync live browser reload files including react components.  
+* Browser - Sync live browser reload files including react components.  
 
-*Webpack - Bundle modules and dependencies
+* Webpack - Bundle modules and dependencies
 
 ## Quick Start
 
@@ -59,8 +59,17 @@ var Component = React.createClass({
 
 
 
-## Creating components
+## Creating components -- Get to work.
  
- TODO###
+ __Creating components__
+ 
+ - Create your component -- 'src/libs/mycomponent.js'
+ - Add it to webpack config
+ - Modify index.html or create a mycomponent.html
+ 
+ __Customizing configurations__
+ 
+ - TODO
+ 
  
  
