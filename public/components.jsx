@@ -9,7 +9,7 @@ var $ = require('jquery');
  * components`
  */
 
-var Sample = require('../libs/samples.jsx');
+var Sample = require('../src/libs/samples.jsx');
 
 
 React.render(<Sample />, document.getElementById('sample'));
