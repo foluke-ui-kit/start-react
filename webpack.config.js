@@ -4,19 +4,20 @@
 
 var webpack = require('webpack');
 
-var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('libs.js');
+var commonsPlugin = new webpack.optimize.CommonsChunkPlugin({
+    filename: 'libs.js',
+    minChunks: 2
+});
 
 module.exports = {
     entry: {
-        elements: './src/react-components/src/elements.jsx',
-        htmlElements: './src/react-components/src/html-elements.jsx',
-        samples: './src/react-components/src/samples.jsx',
-        icons: './src/react-components/src/icons.jsx'
+        sampleComponent: './src/public/components.jsx'
+
     },
     output: {
-        path: './src/react-components/app/',
+        path: './src/apps/',
         filename: '[name].js',
-        publicPath: './src/react-components/src/'
+        publicPath: './src/libs/'
     },
     module: {
         loaders: [

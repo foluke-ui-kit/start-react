@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "lesshat": "~3.0.2",
-    "basscss": "~6.1.6"
+    "basscss": "~6.1.6",
+    "flex-object": "git@github.com:basscss/flex-object.git#~1.1.3"
   }
 }
