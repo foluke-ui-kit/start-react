@@ -74,7 +74,7 @@ Cleans the app directory and complies production ready scripts`
  
 ### History
 
-  --0.0.3__
+  --0.0.4__
   
   - Add build run script to NPM package.json 
   
