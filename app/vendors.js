@@ -1,14 +1,1 @@
-webpackJsonp([1],[
-/* 0 */
-/*!*********************!*\
-  !*** multi vendors ***!
-  \*********************/
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(/*! react */1);
-	module.exports = __webpack_require__(/*! jquery */157);
-
-
-/***/ }
-]);
-//# sourceMappingURL=vendors.js.map
+webpackJsonp([2],[function(e,t,n){n(58),e.exports=n(59)}]);

@@ -57,6 +57,11 @@ var Component = React.createClass({
 });
 ```
 
+__Build__
+
+`npm run builds`
+
+Cleans the app directory and complies production ready scripts` 
 
 
 ## Creating components -- Get to work.
@@ -68,6 +73,10 @@ var Component = React.createClass({
  - Modify index.html or create a mycomponent.html
  
 ### History
+
+  --0.0.4__
+  
+  - Add build run script to NPM package.json 
   
   __0.0.2__
   

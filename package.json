@@ -1,11 +1,12 @@
 {
   "name": "start-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Start react development here...",
   "main": "bs-config.js",
   "scripts": {
     "postinstall": "bower install",
     "dev": "webpack -d --watch & browser-sync start --config bs-config.js ",
+    "build": "rm -r app/* && webpack -p",
     "sync": "browser-sync start --config bs-config.js"
   },
   "repository": {
