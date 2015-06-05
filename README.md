@@ -76,12 +76,13 @@ Cleans the app directory and complies production ready scripts`
 
 __Webpack__
 
-Go to `webpack.config.js` and modify you options for example -- 
-Change `main: './public/mycomponent.jsx',` to the path to your new component 
+Go to `webpack.config.js` and modify you options for example 
+- Change `main: './public/mycomponent.jsx',` to the path to your new component 
 
 __Modify Components__
 
-Your can simple modify and reuse  `public\components.jsx` -- change the following line(s)  to reflect you new component values
+Your can simple modify and reuse  `public\components.jsx` 
+- change the following line(s)  to reflect you new component values
 
 ```jsx
 var Sample = require('../src/libs/samples.jsx');
