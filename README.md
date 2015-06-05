@@ -1,7 +1,7 @@
 # start-react
 
 
-A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating react Components. The goal is simply to try and stay true the idea that **React is the V in MVC**, Flux, Routing, Isomorphic, etc are cool but it's not what **start react** was built to do. It is simply meant to be used to build, test and package views or "Composable Components" that can then be reused in any application.
+A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating React components. The goal is simply to try and stay true the idea that **React is the V in MVC**. Flux, Routing, Isomorphic, etc are cool but it's not what **start-react** was built to do, it was created to be a simple option for anyone who just wants to build, test and package "Composable Components" or **V**-iews that can then be reused in any application.
 
 __Features:__
 
@@ -102,17 +102,21 @@ React.render(<Sample />, document.getElementById('component'));
 
 ### History
 
-  __0.0.4__
+__0.0.6__
 
-  - Add build run script to NPM package.json
+__0.0.5__
 
-  __0.0.2__
+__0.0.4__
 
-  - Added browser sync
-  - Added run scripts to package.json
-  - Add Readme
+- Add build run script to NPM package.json
 
-  __0.0.1__
+__0.0.2__
+
+- Added browser sync
+- Added run scripts to package.json
+- Add Readme
+
+__0.0.1__
 
 - Public release
 
