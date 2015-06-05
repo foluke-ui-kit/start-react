@@ -1,8 +1,7 @@
 # start-react
 
 
-A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating react Components, it tries to stay true the idea that **React is the V in MVC**. Use it to build, test and package "Composable Components" that can be reused in your applications.
-
+A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating react Components. The goal is simply to try and stay true the idea that **React is the V in MVC**, Flux, Routing, ES6, Isomorphic, etc are good but not what **start react** was built to do. It is simply meant to be used to build, test and package "Composable Components" that can be reused in any application.
 
 __Features:__
 
