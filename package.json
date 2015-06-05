@@ -1,6 +1,6 @@
 {
   "name": "start-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Start react development here...",
   "main": "bs-config.js",
   "scripts": {
