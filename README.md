@@ -1,3 +1,4 @@
+#React-Start
 A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating React components. The goal is simply to try and stay true the idea that **React is the V in MVC**. Flux, Routing, Isomorphic, etc are cool but it's not what **start-react** was built to do, it was created to be a simple option for anyone who just wants to build, test and package "Composable Components" or **V**-iews that can then be reused in any application.
 
 __Features:__
