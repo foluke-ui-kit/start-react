@@ -8,6 +8,7 @@ var React = require("react");
 /**
  * webpack compiled components sample file
  */
+
 // import the component
 var Sample = require('../src/libs/samples.jsx');
 // render the main component

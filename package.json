@@ -1,10 +1,11 @@
 {
   "name": "start-react",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "Start react development here...",
   "main": "app/main.js",
   "scripts": {
     "postinstall": "bower install",
+    "preversion": "npm run build",
     "dev": "webpack -d --watch & browser-sync start --config bs-config.js ",
     "build": "rm -r app/* && webpack -p",
     "sync": "browser-sync start --config bs-config.js"
