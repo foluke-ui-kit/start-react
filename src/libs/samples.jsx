@@ -23,11 +23,7 @@ var Component = React.createClass({
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel? Accusantium culpa est fuga quae vel.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit? Consectetur corporis eos expedita fuga odio sunt vitae voluptates.</p>
                 <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!</p>
-                <p>
-                <button className="btn btn-default">
-                Sample Button
-                </button>
-                </p>
+
             </div>
         );
     }
@@ -36,9 +32,9 @@ var Component = React.createClass({
 
 
 /**
- * setup your react component
+ * Namespaced react component
  */
-Component.Hello = React.createClass({
+Component.Button = React.createClass({
 
     /**
      * set your prop validations
@@ -68,7 +64,7 @@ Component.Hello = React.createClass({
      */
     getDefaultProps: function () {
         return {
-            name: 'John Hannock'
+            name: 'My Button'
 
         }
     },
@@ -95,9 +91,9 @@ Component.Hello = React.createClass({
 
     render: function () {
         return (
-            <div className="hello">
-                Hello { this.props.name }
-            </div>
+            <button className="btn btn-default">
+                { this.props.name }
+            </button>
         );
     }
 });
