@@ -1,6 +1,6 @@
 {
   "name": "start-react",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Start react development here...",
   "main": "app/main.js",
   "scripts": {
