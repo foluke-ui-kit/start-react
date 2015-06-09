@@ -8,8 +8,6 @@
  */
 var React = require('react');
 
-
-
 /**
  * Briefly describe your Element here
  */

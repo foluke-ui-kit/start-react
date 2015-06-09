@@ -67,7 +67,7 @@ Cleans the app directory and complies and bundles your components
   - [Pete Hunt React Webpack Guide ](https://github.com/petehunt/webpack-howto)
  - Modify index.html or create a mycomponent.html
 
-##Config Options
+## Config Options
 
 __Webpack__
 
