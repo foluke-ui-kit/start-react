@@ -1,3 +1,4 @@
+#React-Start
 A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating React components. The goal is simply to try and stay true the idea that **React is the V in MVC**. Flux, Routing, Isomorphic, etc are cool but it's not what **start-react** was built to do, it was created to be a simple option for anyone who just wants to build, test and package "Composable Components" or **V**-iews that can then be reused in any application.
 
 __Features:__
@@ -10,17 +11,13 @@ __Features:__
 
 ## Quick Start
 
-__Download / Clone this repository:__
+__Download the repository package:__
 
-`git clone https://github.com/foluke-ui-kit/start-react.git`
+- [Download the latest release](https://github.com/foluke-ui-kit/start-react/releases)
+- Unzip package
+- Install the dependencies: `npm install` installs npm and bower dependencies
 
-__Install the dependencies:__
-
-`npm install`
-
-Installs npm and bower dependencies
-
-__Launch development:__
+__Start development:__
 
 `npm run dev`
 
@@ -104,6 +101,9 @@ __BrowserSync Config__
 
 BrowserSync (bs-config.js) handles all livereload options go to [BrowserSync Docs](http://www.browsersync.io/docs/options/)
 
+To contribute fork the repo -- https://github.com/foluke-ui-kit/start-react send a pull request.
+
+### Contribute
 
 ### History
 
