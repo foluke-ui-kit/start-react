@@ -10,17 +10,13 @@ __Features:__
 
 ## Quick Start
 
-__Download / Clone this repository:__
+__Download the repository package:__
 
-`git clone https://github.com/foluke-ui-kit/start-react.git`
+- [Download the latest release](https://github.com/foluke-ui-kit/start-react/releases)
+- Unzip package
+- Install the dependencies: `npm install` installs npm and bower dependencies
 
-__Install the dependencies:__
-
-`npm install`
-
-Installs npm and bower dependencies
-
-__Launch development:__
+__Start development:__
 
 `npm run dev`
 
@@ -104,6 +100,9 @@ __BrowserSync Config__
 
 BrowserSync (bs-config.js) handles all livereload options go to [BrowserSync Docs](http://www.browsersync.io/docs/options/)
 
+To contribute fork the repo -- https://github.com/foluke-ui-kit/start-react send a pull request.
+
+### Contribute
 
 ### History
 
