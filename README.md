@@ -90,12 +90,12 @@ __Modify Component HTML Page__
 
 You can find the component HTML file inside /public directory
 - Open and modify the index.html as needed
-- See the **BrowserSync Config** for information on linking to external packages/asstes using the **routes option***
+- See the **BrowserSync Config** for information on linking to external packages / assets using the **routes option***
 
   ```js
   routes: {
-      "/packages": "packages",
-      "/app": "app"
+      "/packages": "packages", //link bower packages (bootstrap)
+      "/app": "app" //react components
   }
   ```
 - Open public/components.jsx read the comments and modify accordingly
