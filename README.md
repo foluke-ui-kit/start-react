@@ -107,6 +107,10 @@ BrowserSync (bs-config.js) handles all livereload options go to [BrowserSync Doc
 
 ### History
 
+__0.0.9__
+
+Build release
+
 __0.0.8__
 
 - Added namspaced button component to samples
