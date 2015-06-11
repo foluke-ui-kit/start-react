@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "bower install",
     "preversion": "npm run build",
-    "dev": "webpack -d --watch & browser-sync start --config bs-config.js ",
+    "development": "webpack -d --watch & browser-sync start --config bs-config.js ",
     "build": "rm -r app/* && webpack -p",
     "liveview": "browser-sync start --config bs-config.js"
   },
