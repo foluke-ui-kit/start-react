@@ -55,6 +55,7 @@ __NPM Script Commands__
 - `npm run build` : Package for production  removes all the development files and runs webpack -p(roduction)
 - `npm run development`: Development watches for changes build with mapping - launches browsersync and webpack in watch mode.
 - `npm run liveview` : Liveview fires up BrowserSync and launches you default browser
+- `npm run webpack` : Use webpack to build and watch in production mode
 
 
 Cleans the app directory and complies and bundles your components

@@ -14,6 +14,7 @@ module.exports = {
         main: './public/components.jsx',
         vendors: ['react','jquery']
 
+
     },
     output: {
         path: './app/',
