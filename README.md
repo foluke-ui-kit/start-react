@@ -11,7 +11,7 @@ __Features:__
 
 ### Quick Start
 ----------------
-[start-react](/README.md)
+[start-react](/STARTHERE.md)
 
 ### Contribute
 
