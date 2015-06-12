@@ -8,6 +8,7 @@
     "preversion": "npm run build",
     "development": "webpack -d --watch & browser-sync start --config bs-config.js ",
     "webpack": "webpack -p",
+    "commit": "git add -A . && git commit -a -m 'Release package'",
     "build": "rm -r app/* && webpack -p",
     "liveview": "browser-sync start --config bs-config.js"
   },

@@ -63,7 +63,6 @@ Component.Button = React.createClass({
     getDefaultProps: function () {
         return {
             name: 'My Button'
-
         }
     },
 

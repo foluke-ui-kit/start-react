@@ -1,21 +1,17 @@
 #NAME
-A simple description
+No project should be without a readme, use this one as a boilerplate for creating your own README.md
 
 __Features:__
 
-* NPM - Package management, scripts directives for build management.
-
-* Browser - Sync live browser reload files including react components.  
-
-* Webpack - Bundle modules and dependencies
+* ...
 
 ### Quick Start
 ----------------
-[start-react](/STARTHERE.md)
+To find out how to use the Start-React boilerplate [head over to the Start-React.md  readme](/STARTHERE.md)
 
 ### Contribute
 
-Frok the REPO and send a push request, you know the drill...
+Fork the REPO and send a push request, you know the drill...
 
 ### History
 
