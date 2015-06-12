@@ -1,6 +1,6 @@
 {
   "name": "start-react",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Start react development here...",
   "main": "app/main.js",
   "scripts": {
@@ -43,5 +43,4 @@
     "watchify": "^3.2.1",
     "webpack": "^1.9.10"
   }
-
 }
