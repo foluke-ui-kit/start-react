@@ -1,6 +1,6 @@
 {
   "name": "start-react",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Start react development here...",
   "main": "app/main.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "git-commit": "git add -A . && git commit -a -m 'Release package'",
     "git-push": "git push origin develop",
     "build": "rm -r app/* && webpack -p",
-    "release": "npm run build && npm run git-commit && npm version patch && npm run git-push",
+    "release": "npm run build && npm run git-commit && npm run git-push && npm version patch && npm run git-push",
     "version:patch": "npm version patch && npm run git-push",
     "liveview": "browser-sync start --config bs-config.js"
   },
