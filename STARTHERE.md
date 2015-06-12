@@ -4,22 +4,18 @@ A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for c
 __Features:__
 
 * NPM - Package management, scripts directives for build management.
-
-* Browser - Sync live browser reload files including react components.  
-
+* Browser - Sync live browser reload files including react components.
 * Webpack - Bundle modules and dependencies
 
-## Quick Start
+__Required__
 
-__Download the repository package:__
-
-- [Download the latest release](https://github.com/foluke-ui-kit/start-react/releases)
-- Unzip package
-- Install the dependencies: `npm install` installs npm and bower dependencies
+* NodeJS - [Download/Install](https://nodejs.org/)
+* Bower [more info](http://bower.io/)  - install `npm install -g bower`
+* Browser sync [more info](http://www.browsersync.io/) - install `npm install -g browser-sync`
 
 __Start development:__
 
-`npm run devvelopment`
+`npm run development`
 
 Launches:
 - BrowserSync in your default browser and watches for changes to your files (jsx, html, css, etc) and updates the browser on the fly

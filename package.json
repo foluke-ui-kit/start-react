@@ -12,6 +12,7 @@
     "git-push": "git push origin develop",
     "build": "rm -r app/* && webpack -p",
     "release": "npm run build && npm run git-commit && npm version patch && npm run git-push",
+    "version:patch": "npm version patch && npm run git-push",
     "liveview": "browser-sync start --config bs-config.js"
   },
   "repository": {
@@ -42,4 +43,5 @@
     "watchify": "^3.2.1",
     "webpack": "^1.9.10"
   }
+
 }
