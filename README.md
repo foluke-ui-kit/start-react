@@ -5,6 +5,12 @@ __Features:__
 
 * ...
 
+Required
+
+NodeJS - Download/Install
+Bower more info - install npm install -g bower
+Browser sync more info - install npm install -g browser-sync
+
 ### Quick Start
 ----------------
 To find out how to use the Start-React boilerplate [head over to the Start-React.md  readme](/STARTHERE.md)
