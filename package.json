@@ -1,6 +1,6 @@
 {
   "name": "ChangePackageName",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Start react development here...",
   "main": "app/main.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "build": "rm -r app/* && webpack -p",
     "release": "npm run build && npm run git-commit && npm run version:patch",
     "version:patch": "npm version patch && git push --tags",
-    "liveview": "browser-sync start --config bs-config.js"
+    "liveview": "browser-sync start --config bs-config.js",
+    "updates": "npm update && bower update"
   },
   "repository": {
     "type": "git",
