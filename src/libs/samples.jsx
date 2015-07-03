@@ -6,7 +6,8 @@
  *
  * @type {*|exports}
  */
-var React = require('react');
+import React from 'react'
+
 
 /**
  * Briefly describe your Element here
@@ -99,4 +100,4 @@ Component.Button = React.createClass({
 /**
  * export the element
  */
-module.exports = Component;
+export default Component;
