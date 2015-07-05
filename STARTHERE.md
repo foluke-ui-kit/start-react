@@ -107,31 +107,7 @@ To contribute fork the repo -- https://github.com/foluke-ui-kit/start-react send
 
 ### History
 
-__0.0.9__
-
-Build release
-
-__0.0.8__
-
-- Added namspaced button component to samples
-- Updated readme
-- Code cleanup
-
-__0.0.4__
-
-- Add build run script to NPM package.json
-
-__0.0.2__
-
-- Added browser sync
-- Added run scripts to package.json
-- Add Readme
-
-__0.0.1__
-
-- Public release
-
-
+[View the release notes](https://github.com/foluke-ui-kit/start-react/releases)
 
 ### TODO
 
