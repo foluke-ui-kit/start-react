@@ -107,6 +107,11 @@ To contribute fork the repo -- https://github.com/foluke-ui-kit/start-react send
 
 ### History
 
+__0.3.0__
+
+- Refactored components using ES6 classes
+- Created a component / class for buttons -- buttons.jsx 
+
 __0.0.9__
 
 Build release
