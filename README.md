@@ -21,10 +21,7 @@ Fork the REPO and send a push request, you know the drill...
 
 ### History
 
-__0.0.1__
-
-- Public release
-
+[View latest releases and notes](https://github.com/foluke-ui-kit/start-react/releases)
 
 ### TODO
 
