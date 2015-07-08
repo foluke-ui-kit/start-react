@@ -26,7 +26,9 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "app",
+    ".idea"
   ],
   "dependencies": {
     "bootstrap": "~3.3.0",
