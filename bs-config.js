@@ -26,7 +26,8 @@ module.exports = {
         baseDir: 'public',
         routes: {
             "/packages": "packages",
-            "/app": "app"
+            "/app": "app",
+            "/component": "component"
         }
     },
     "proxy": false,

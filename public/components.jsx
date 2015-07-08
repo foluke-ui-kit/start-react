@@ -11,6 +11,7 @@
 
 // import the component
 import React from 'react'
+import $ from 'jquery'
 import Sample from '../src/libs/samples.jsx'
 import Button from '../src/libs/button.jsx'
 //var Sample = require('../src/libs/samples.jsx');
