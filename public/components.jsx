@@ -12,12 +12,12 @@
 // import the component
 import React from 'react'
 import $ from 'jquery'
-import Sample from '../src/libs/samples.jsx'
-import Button from '../src/libs/button.jsx'
+import Sample, { Button }  from'../src/libs/samples.jsx'
+//import Button from '../src/libs/button.jsx'
 //var Sample = require('../src/libs/samples.jsx');
 // render the main component
 React.render(<Sample />, document.getElementById('component'));
 // render the NameSpaced child component using the
 React.render(<Button />, document.getElementById('button'));
 // render the NameSpaced child component with props
-React.render(<Button name="Sample Button" />, document.getElementById('sbutton'));
+React.render(<Button name="My Sample Button" />, document.getElementById('sbutton'));
