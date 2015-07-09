@@ -34,3 +34,28 @@ export default class Component extends React.Component {
     }
 }
 
+
+
+export class Button extends React.Component {
+
+    constructor(props){
+        super(props);
+    }
+
+    render() {
+        return (
+            <button className="btn btn-default">
+                { this.props.name }
+            </button>
+        );
+    }
+}
+
+Button.PropTypes = {
+
+}
+
+Button.defaultProps = {
+    name: 'Button'
+}
+
