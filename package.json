@@ -16,7 +16,8 @@
     "release": "npm run build && npm run git-commit && npm run version:patch",
     "version:patch": "npm version patch && git push --tags",
     "liveview": "browser-sync start --config bs-config.js",
-    "updates": "npm update && bower update"
+    "updates": "npm update && bower update",
+    "new": "cp src/libs/_component.jsx src/libs/component.jsx"
   },
   "repository": {
     "type": "git",

@@ -9,7 +9,7 @@
  * webpack compiled components sample file
  */
 
-// import the reacr component
+// import the react component
 import React from 'react'
 import ReactDOM from 'react-dom'
 // import $ from 'jquery'
