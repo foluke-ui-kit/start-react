@@ -5,16 +5,14 @@
 var webpack = require('webpack');
 
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin({
-    filename: 'libs.js',
+    filename: 'index.js',
     minChunks: 2
 });
 
 module.exports = {
     entry: {
-        sample: './src/libs/samples.jsx',
-        button: './src/libs/button.jsx',
-        vendors: ['react','jquery']
-    },
+        bundle: './public/components.jsx'
+            },
     output: {
         path: './app/',
         filename: '[name].js',

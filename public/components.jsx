@@ -9,15 +9,14 @@
  * webpack compiled components sample file
  */
 
-// import the component
+// import the reacr component
 import React from 'react'
-import $ from 'jquery'
+import ReactDOM from 'react-dom'
+// import $ from 'jquery'
 import Sample, { Button }  from'../src/libs/samples.jsx'
-//import Button from '../src/libs/button.jsx'
-//var Sample = require('../src/libs/samples.jsx');
 // render the main component
-React.render(<Sample />, document.getElementById('component'));
-// render the NameSpaced child component using the
-React.render(<Button />, document.getElementById('button'));
-// render the NameSpaced child component with props
-React.render(<Button name="My Sample Button" />, document.getElementById('sbutton'));
+ReactDOM.render(<Sample />, document.getElementById('component'));
+// render the Button component using the
+ReactDOM.render(<Button />, document.getElementById('button'));
+// render the Button component with props
+ReactDOM.render(<Button name="My Sample Button" />, document.getElementById('sbutton'));

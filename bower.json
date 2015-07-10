@@ -27,8 +27,8 @@
     "bower_components",
     "test",
     "tests",
-    "app",
-    ".idea"
+    ".idea",
+    "src"
   ],
   "dependencies": {
     "bootstrap": "~3.3.0",
