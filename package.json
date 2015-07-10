@@ -1,6 +1,6 @@
 {
   "name": "ChangePackageName",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Start react development here...",
   "main": "src/libs/samples.jsx",
   "scripts": {
