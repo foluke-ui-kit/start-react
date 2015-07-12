@@ -7,24 +7,21 @@
  * @type {*|exports}
  */
 import React from 'react'
+import classNames from 'classnames'
 
 
 /**
- * Briefly describe your Element here
+ * Basic sample component displays a title and lorem paragraph
  */
 
 
 export default class Component extends React.Component {
    
 
-    // static defaultProps = {
-    //     someprop: "value"
-    // }
-
     render(){
                 return (
             <div>
-                <h3>Sample Component</h3>
+                <h1>Sample Component</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel. Accusantium culpa est fuga quae vel.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit. Consectetur corporis eos expedita fuga odio sunt vitae voluptates.</p>
                 <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!</p>
@@ -43,8 +40,9 @@ export class Button extends React.Component {
     }
 
     render() {
+        var classnames = classNames('btn', this.props.btnClass );
         return (
-            <button className="btn btn-default">
+            <button className={ classnames }>
                 { this.props.name }
             </button>
         );
@@ -56,6 +54,7 @@ Button.PropTypes = {
 }
 
 Button.defaultProps = {
-    name: 'Button'
+    name: 'Button',
+    btnClass: 'btn-default',
 }
 
