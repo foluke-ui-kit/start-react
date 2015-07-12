@@ -21,7 +21,7 @@ export default class Component extends React.Component {
     render(){
                 return (
             <div>
-                <h1>Sample Component</h1>
+                <h3>Sample Component</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel. Accusantium culpa est fuga quae vel.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit. Consectetur corporis eos expedita fuga odio sunt vitae voluptates.</p>
                 <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!</p>
@@ -32,7 +32,11 @@ export default class Component extends React.Component {
 }
 
 
-
+/**
+ * A sample button component a couple of props
+ * uses classnames to join selectors together
+ * 
+ */
 export class Button extends React.Component {
 
     constructor(props){
@@ -40,7 +44,7 @@ export class Button extends React.Component {
     }
 
     render() {
-        var classnames = classNames('btn', this.props.btnClass );
+        var classnames = classNames(this.props.btnClass );
         return (
             <button className={ classnames }>
                 { this.props.name }
@@ -55,6 +59,6 @@ Button.PropTypes = {
 
 Button.defaultProps = {
     name: 'Button',
-    btnClass: 'btn-default',
+    btnClass: ['btn','btn-default'],
 }
 
