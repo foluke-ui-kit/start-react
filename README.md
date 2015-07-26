@@ -4,15 +4,85 @@ No project should be without a readme, use this one as a boilerplate for creatin
 __Features:__
 
 * ...
+* ...
 
-Required
+__Required__
 
-NodeJS - Download/Install
-Bower more info - install npm install -g bower
+NodeJS - [Download/Install](https://nodejs.org/)
+Bower [more info](http://bower.io/) - install npm install -g bower
 Browser sync more info - install npm install -g browser-sync
 
-### Quick Start
-----------------
+## Quick Start
+
+__In React Component__
+
+* Install the plugin via NPM - `npm i @shawnsandy/react-table-sets`
+* Create your *.jsx files
+
+```jsx
+
+	// import the component
+	import React from 'react'
+	// import $ from 'jquery'
+	import Sample, { Button }  from'../src/libs/samples.jsx'
+	// render the main component
+	React.render(<Sample />, document.getElementById('component'));
+	// render the Button component using the
+	React.render(<Button />, document.getElementById('button'));
+	// render the Button component with props
+	React.render(<Button name="My Sample Button" />, document.getElementById('sbutton'));
+
+```
+
+* Compile and add (*.js) to your html page.
+
+```
+	<!DOCTYPE html>
+	<html>
+	<head lang="en">
+	    <meta charset="UTF-8">
+	    <title>Sample Component</title>
+	    <link rel="stylesheet" href="/packages/bootstrap/dist/css/bootstrap.min.css"/>
+	    <link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+	<div class="container">
+	  <div class="row">
+	      <h1>React Components!!!</h1>
+	      <hr/>
+	      <div id="component"></div>
+	      <hr/>
+	      <p>
+	          <span id="button"></span>
+	           <span id="sbutton"></span>
+	      </p>
+	  </div>
+	</div>
+	<!--import libs bundle/dependencies and import main.js component-->
+	<script src="/component/html-component.js"></script>
+	<script src="/component/main.js"></script>
+	</body>
+	</html>
+```
+
+__Out of the box (bower)__
+
+Use the componet out of the box 
+
+* bower i --save component
+* directly in you html add the component code 
+
+```html 
+
+	<component id="sample" class="" data-name="Some attribute / props"></component>
+	<script src="bower_components/package_name/app/index.js"></script>
+	<script src="bower_components/package_name/app/libs.js"></script>
+
+```
+
+
+__Start-React__
+
 To find out how to use the Start-React boilerplate [head over to the Start-React.md  readme](/STARTHERE.md)
 
 ### Contribute
