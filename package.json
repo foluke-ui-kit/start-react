@@ -4,7 +4,6 @@
   "description": "Start react development here...",
   "main": "src/libs/samples.jsx",
   "scripts": {
-    "postinstall": "bower install",
     "preinstall": "npm -v && bower -v",
     "preversion": "npm run build",
     "postversion": "git push --tags && npm run git-push",
