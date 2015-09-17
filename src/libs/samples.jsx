@@ -14,6 +14,10 @@ import classNames from 'classnames'
  * Basic sample component displays a title and lorem paragraph
  */
 
+export class component extends React.Component {
+
+}
+
 
 export default class Component extends React.Component {
    
@@ -42,6 +46,7 @@ export class Button extends React.Component {
 
     static defaultProps = {
         name: 'Button',
+        btnClass: ['btn','btn-default'],
     }
 
     static propTypes  = {
