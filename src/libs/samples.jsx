@@ -40,6 +40,15 @@ export default class Component extends React.Component {
  */
 export class Button extends React.Component {
 
+    static defaultProps = {
+        name: 'Button',
+        btnClass: ['btn','btn-default'],
+    }
+
+    static propTypes  = {
+        name: React.PropTypes.string
+    }
+
     constructor(props){
         super(props);
     }
@@ -54,12 +63,6 @@ export class Button extends React.Component {
     }
 }
 
-Button.PropTypes = {
 
-}
 
-Button.defaultProps = {
-    name: 'Button',
-    btnClass: ['btn','btn-default'],
-}
 
