@@ -1,9 +1,7 @@
 /**
  * Created by shawnsandy on 6/4/15.
  */
-
-//var React = require("react");
-//var $ = require('jquery');
+'use strict';
 
 /**
  * webpack compiled components sample file
@@ -12,7 +10,6 @@
 // import the react component
 import React from 'react'
 import ReactDOM from 'react-dom'
-// import $ from 'jquery'
 import Sample, { Button }  from'../src/libs/samples.jsx'
 // render the main component
 ReactDOM.render(<Sample />, document.getElementById('component'));

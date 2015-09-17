@@ -42,7 +42,6 @@ export class Button extends React.Component {
 
     static defaultProps = {
         name: 'Button',
-        btnClass: ['btn','btn-default'],
     }
 
     static propTypes  = {
