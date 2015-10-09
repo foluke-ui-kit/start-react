@@ -35,7 +35,6 @@ export default class Component extends React.Component {
         <p>Lorem ipsum dolor sit amet..</p>
         <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!</p>
         <Button name="Component Button"/>
-
       </aside>
 
     );
