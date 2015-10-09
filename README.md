@@ -1,97 +1,113 @@
-#NAME
-No project should be without a readme, use this one as a boilerplate for creating your own README.md
+#React-Start
+A simple, somewhat opiniated -- no fuss, no bells, no whistles boilerplate for creating React components. The goal is simply to try and stay true the idea that **React is the V in MVC**. Flux, Routing, Isomorphic, etc are cool but it's not what **start-react** was built to do, it was created to be a simple option for anyone who just wants to build, and package "Composable Components" or **V**-iews that can then be reused in any application.
 
 __Features:__
 
-* ...
-* ...
+* NPM - Package management, scripts directives for build management.
+* Browser - Sync live browser reload files including react components.
+* Webpack - Bundle modules and dependencies
 
 __Required__
 
-NodeJS - [Download/Install](https://nodejs.org/)
-Bower [more info](http://bower.io/) - install npm install -g bower
-Browser sync more info - install npm install -g browser-sync
+* NodeJS - [Download/Install](https://nodejs.org/)
+* Bower [more info](http://bower.io/)  - install `npm install -g bower`
+* Browser sync [more info](http://www.browsersync.io/) - install `npm install -g browser-sync`
 
-## Quick Start
+__Start development:__
 
-__In React Component__
+`npm run development`
 
-* Install the plugin via NPM - `npm i @shawnsandy/react-table-sets`
-* Create your *.jsx files
+Launches:
+- BrowserSync in your default browser and watches for changes to your files (jsx, html, css, etc) and updates the browser on the fly
+- Webpack in development development mode the watches and compiles you jsx files
+
+Open the sample component `src/libs/samples.jsx` make the some changes and to the component and watch the changes live reload in your browser, you can also edit the public/css/*.css and public/*.html
+
 
 ```jsx
+var Component = React.createClass({
 
-	// import the component
-	import React from 'react'
-	// import $ from 'jquery'
-	import Sample, { Button }  from'../src/libs/samples.jsx'
-	// render the main component
-	React.render(<Sample />, document.getElementById('component'));
-	// render the Button component using the
-	React.render(<Button />, document.getElementById('button'));
-	// render the Button component with props
-	React.render(<Button name="My Sample Button" />, document.getElementById('sbutton'));
+    render: function () {
+        return (
+            <div>
+                <h3>Sample Component</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel? Accusantium culpa est fuga quae vel.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit? Consectetur corporis eos expedita fuga odio sunt vitae voluptates.</p>
+                <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!</p>
+                <p>
+                <button className="btn btn-default">
+                Sample Button
+                </button>
+                </p>
+            </div>
+        );
+    }
 
+});
 ```
 
-* Compile and add (*.js) to your html page.
+__NPM Script Commands__
 
-```
-	<!DOCTYPE html>
-	<html>
-	<head lang="en">
-	    <meta charset="UTF-8">
-	    <title>Sample Component</title>
-	    <link rel="stylesheet" href="/packages/bootstrap/dist/css/bootstrap.min.css"/>
-	    <link rel="stylesheet" href="css/style.css"/>
-	</head>
-	<body>
-	<div class="container">
-	  <div class="row">
-	      <h1>React Components!!!</h1>
-	      <hr/>
-	      <div id="component"></div>
-	      <hr/>
-	      <p>
-	          <span id="button"></span>
-	           <span id="sbutton"></span>
-	      </p>
-	  </div>
-	</div>
-	<!--import libs bundle/dependencies and import main.js component-->
-	<script src="/component/html-component.js"></script>
-	<script src="/component/main.js"></script>
-	</body>
-	</html>
-```
-
-__Out of the box (bower)__
-
-Use the componet out of the box 
-
-* bower i --save component
-* directly in you html add the component code 
-
-```html 
-
-	<component id="sample" class="" data-name="Some attribute / props"></component>
-	<script src="bower_components/package_name/app/index.js"></script>
-	<script src="bower_components/package_name/app/libs.js"></script>
-
-```
+- `npm run build` : Package for production  removes all the development files and runs webpack -p(roduction)
+- `npm run development`: Development watches for changes build with mapping - launches browsersync and webpack in watch mode.
+- `npm run liveview` : Liveview fires up BrowserSync and launches you default browser
+- `npm run webpack` : Use webpack to build and watch in production mode
 
 
-__Start-React__
+Cleans the app directory and complies and bundles your components
 
-To find out how to use the Start-React boilerplate [head over to the Start-React.md  readme](/STARTHERE.md)
+
+## Creating components -- Get to work.
+
+ __Creating components__
+
+ - Create your component -- 'src/libs/mycomponent.js'
+ - Add it to webpack config check out some tutorials on webpack -
+  - [Webpack Config](http://webpack.github.io/docs/tutorials/getting-started/#config-file)
+  - [Pete Hunt React Webpack Guide ](https://github.com/petehunt/webpack-howto)
+ - Modify index.html or create a mycomponent.html
+
+## Config Options
+
+__Webpack__
+
+Go to `webpack.config.js` and modify you options for example
+- Change `main: './public/mycomponent.jsx',` to the path to your new component
+
+__NPM: Package__
+
+Open up `package.json` and change the name
+
+  * Then name of the package
+  * Reset the version remember to keep your version naming semantic
+  * Change the  description, repository/url, bugs/url, homepage values also
+  * Modify anything else you feel is necessary
+
+__Modify Component HTML Page__
+
+You can find the component HTML file inside /public directory
+- Open and modify the index.html as needed
+- See the **BrowserSync Config** for information on linking to external packages / assets using the **routes option***
+
+  ```js
+  routes: {
+      "/packages": "packages", //link bower packages (bootstrap)
+      "/app": "app" //react components
+  }
+  ```
+- Open public/components.jsx read the comments and modify accordingly
+
+__BrowserSync Config__
+
+BrowserSync (bs-config.js) handles all livereload options go to [BrowserSync Docs](http://www.browsersync.io/docs/options/)
+
+To contribute fork the repo -- https://github.com/foluke-ui-kit/start-react send a pull request.
 
 ### Contribute
 
-Fork the REPO and send a push request, you know the drill...
-
 ### History
 
-[View latest releases and notes](https://github.com/foluke-ui-kit/start-react/releases)
+[View the release notes](https://github.com/foluke-ui-kit/start-react/releases)
 
 ### TODO
 
@@ -101,6 +117,8 @@ Fork the REPO and send a push request, you know the drill...
 ### License
 
 The MIT License (MIT)
+
+Copyright (c) 2014 Waybury
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
