@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "lesshat": "~3.0.2",
-    "basscss": "~6.1.6"
+    "basscss": "~6.1.6",
+    "bootstrap": "~3.3.5"
   }
 }
