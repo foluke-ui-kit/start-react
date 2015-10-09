@@ -109,11 +109,6 @@ webpackJsonp([0],{
 	      _react2['default'].createElement(
 	        'p',
 	        null,
-	        'Lorem ipsum dolor sit amet..'
-	      ),
-	      _react2['default'].createElement(
-	        'p',
-	        null,
 	        'Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!'
 	      ),
 	      _react2['default'].createElement(Button, { name: 'Component Button' })

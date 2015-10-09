@@ -32,7 +32,6 @@ export default class Component extends React.Component {
       <aside className="hello-component">
         <h3>A Sample Component</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias </p>
-        <p>Lorem ipsum dolor sit amet..</p>
         <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!</p>
         <Button name="Component Button"/>
       </aside>

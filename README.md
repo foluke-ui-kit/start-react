@@ -25,25 +25,25 @@ Open the sample component `src/libs/samples.jsx` make the some changes and to th
 
 
 ```jsx
-var Component = React.createClass({
+/**
+ * Basic sample component displays a title and lorem paragraph
+ */
+export default class Component extends React.Component {
 
-    render: function () {
-        return (
-            <div>
-                <h3>Sample Component</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias quia quibusdam quidem recusandae reiciendis saepe similique, sit tempore tenetur vel? Accusantium culpa est fuga quae vel.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod, velit? Consectetur corporis eos expedita fuga odio sunt vitae voluptates.</p>
-                <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non nulla obcaecati, quae similique sit tempore veritatis voluptas!</p>
-                <p>
-                <button className="btn btn-default">
-                Sample Button
-                </button>
-                </p>
-            </div>
-        );
-    }
+  render() {
+    return (
 
-});
+      <aside className="hello-component">
+        <h3>A Sample Component</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias </p>
+        <p>Lorem ipsum dolor sit amet..</p>
+        <p>Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!</p>
+        <Button name="Component Button"/>
+      </aside>
+
+    );
+  }
+}
 ```
 
 __NPM Script Commands__
