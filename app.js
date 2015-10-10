@@ -9,7 +9,7 @@ var webpackHotMiddleware = require('webpack-hot-middleware');
 /**
  * Require ./webpack.config.js and make a bundler from it
  */
-var webpackConfig = require('./webpack.config');
+var webpackConfig = require('./webpack.hotpack.config');
 var bundler = webpack(webpackConfig);
 
 /**
@@ -17,7 +17,10 @@ var bundler = webpack(webpackConfig);
  */
 browserSync({
     server: {
-      baseDir: 'app',
+      baseDir: 'public',
+      routes: {
+          "/packages": "packages"
+      },
 
       middleware: [
         webpackDevMiddleware(bundler, {
@@ -40,7 +43,7 @@ browserSync({
     // no need to watch '*.js' here, webpack will take care of it for us,
     // including full page reloads if HMR won't work
     files: [
-      'app/css/*.css',
-      'app/*.html'
+      'publix/css/*.css',
+      'public/*.html'
     ]
 });
