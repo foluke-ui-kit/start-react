@@ -4,7 +4,7 @@
   "description": "Start react development here...",
   "main": "src/libs/samples.jsx",
   "bin": {
-    "text": "bin/sample.js"
+    "sample-test": "bin/sample.js"
   },
   "scripts": {
     "preinstall": "npm -v && bower -v",
