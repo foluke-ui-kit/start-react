@@ -16,15 +16,16 @@ Download the latest [https://github.com/foluke-ui-kit/start-react/releases](rele
 - Bower [more info](http://bower.io/)  - install `npm install -g bower`
 - Browser sync [more info](http://www.browsersync.io/) - install `npm install -g browser-sync`
 
-**Start development:**
-
-`npm run dev`
+**Quick Start:**
+Switch over the you install directory
+- Install dependencies `npm install`
+- Test run `npm run dev`
 
 Launches:
 - BrowserSync in your default browser and watches for changes to your files (jsx, html, css, etc) and updates the browser on the fly
-- Webpack in development development mode the watches and compiles you jsx files
+- Webpack in development development mode the watches and compiles you jsx/js files
 
-Open the sample component `src/libs/samples.jsx` make the some changes and to the component and watch the changes live reload in your browser, you can also edit the public/css/_.css and public/_.html
+Open the sample component `src/libs/samples.js` make the some changes and to the component and watch the changes live reload in your browser, you can also edit the public/css/_.css and public/_.html
 
 ```jsx
 /**
