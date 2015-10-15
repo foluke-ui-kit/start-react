@@ -19,7 +19,7 @@
     "version:patch": "npm version patch && git push --tags",
     "liveview": "browser-sync start --config bs-config.js",
     "updates": "npm update && bower update",
-    "setup": "npm link"
+    "setup-react-start": "npm link"
   },
   "repository": {
     "type": "git",
