@@ -4,10 +4,10 @@
   "description": "Start react development here...",
   "main": "src/libs/samples.jsx",
   "bin": {
-    "sample-test": "bin/sample.js"
+    "new-react-component": "bin/new-react-component.js"
   },
   "scripts": {
-    "preinstall": "npm -v && bower -v",
+    "preinstall": "npm -v & bower -v",
     "preversion": "npm run build",
     "postversion": "git push --tags && npm run git-push",
     "dev": "browser-sync start --config bs-config.js & webpack -d",
@@ -19,7 +19,7 @@
     "version:patch": "npm version patch && git push --tags",
     "liveview": "browser-sync start --config bs-config.js",
     "updates": "npm update && bower update",
-    "new": "cp src/libs/_component.jsx src/libs/component.jsx"
+    "setup": "npm link"
   },
   "repository": {
     "type": "git",

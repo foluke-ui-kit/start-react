@@ -11,4 +11,6 @@ var questions = [
   }];
 inquirer.prompt(questions , function( answers ) {
     console.log(answers);
+    if(answers.bacon)
+    console.log('logger')
 });
