@@ -27,7 +27,7 @@ module.exports = {
         routes: {
             "/packages": "packages",
             "/app": "app",
-            "/component": "component"
+            "/dist": "dist"
         }
     },
     "proxy": false,

@@ -8,9 +8,10 @@
  */
 
 // import the react component
+if(env === build ) console.log('build event');
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sample, { Button } from'../src/libs/samples.js';
+import Sample, { Button } from'../src/index.js';
 
 // render the main component
 ReactDOM.render(<Sample />, document.getElementById('component'));
