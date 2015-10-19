@@ -33,6 +33,7 @@ webpackJsonp([0],{
 	
 	// render the main component
 	_reactDom2['default'].render(_react2['default'].createElement(_srcLibsSamplesJs2['default'], null), document.getElementById('component'));
+	_reactDom2['default'].render(_react2['default'].createElement(_srcLibsSamplesJs.Button, null), document.getElementById('button'));
 
 /***/ },
 
@@ -79,6 +80,16 @@ webpackJsonp([0],{
 	  );
 	};
 	
+	exports.Button = Button;
+	var Container = function Container(props) {
+	  return _react2['default'].createElement(
+	    'div',
+	    { clasName: 'lead' },
+	    props.children
+	  );
+	};
+	
+	exports.Container = Container;
 	/**
 	 * Basic sample component displays a title and lorem paragraph
 	 */
@@ -104,19 +115,22 @@ webpackJsonp([0],{
 	      _react2['default'].createElement(
 	        'p',
 	        null,
-	        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias '
+	        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias. Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!'
 	      ),
 	      _react2['default'].createElement(
 	        'p',
 	        null,
-	        'Lorem ipsum dolor sit amet..'
+	        _react2['default'].createElement(Button, { children: 'Component Button' })
 	      ),
 	      _react2['default'].createElement(
-	        'p',
+	        Container,
 	        null,
-	        'Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!'
-	      ),
-	      _react2['default'].createElement(Button, { name: 'Component Button' })
+	        _react2['default'].createElement(
+	          'p',
+	          { className: 'lead' },
+	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quibusdam excepturi saepe et hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium!'
+	        )
+	      )
 	    );
 	  };
 	
@@ -124,7 +138,6 @@ webpackJsonp([0],{
 	})(_react2['default'].Component);
 	
 	exports['default'] = Component;
-	module.exports = exports['default'];
 
 /***/ }
 
