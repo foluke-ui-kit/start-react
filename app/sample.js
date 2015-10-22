@@ -27,20 +27,20 @@ webpackJsonp([0],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _srcLibsSamplesJs = __webpack_require__(/*! ../src/libs/samples.js */ 158);
+	var _srcIndexJs = __webpack_require__(/*! ../src/index.js */ 158);
 	
-	var _srcLibsSamplesJs2 = _interopRequireDefault(_srcLibsSamplesJs);
+	var _srcIndexJs2 = _interopRequireDefault(_srcIndexJs);
 	
 	// render the main component
-	_reactDom2['default'].render(_react2['default'].createElement(_srcLibsSamplesJs2['default'], null), document.getElementById('component'));
-	_reactDom2['default'].render(_react2['default'].createElement(_srcLibsSamplesJs.Button, null), document.getElementById('button'));
+	_reactDom2['default'].render(_react2['default'].createElement(_srcIndexJs2['default'], null), document.getElementById('component'));
+	_reactDom2['default'].render(_react2['default'].createElement(_srcIndexJs.Button, null), document.getElementById('button'));
 
 /***/ },
 
 /***/ 158:
-/*!*****************************!*\
-  !*** ./src/libs/samples.js ***!
-  \*****************************/
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
