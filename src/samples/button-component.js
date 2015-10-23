@@ -7,12 +7,9 @@
  */
 import React from 'react';
 
-export const Button = ({
-children = 'Sample Button',
-}) => (< button className = "btn btn-info" > {
-  children
-} < /button>);
+export const Button = ({children = 'Sample Button',
+}) => (
+  < button className="btn btn-info">{children}< /button>);
 
-export const Container = (props) => (< div clasName = "lead" > {
-  props.children
-} < /div>);
+export const Container = (props) => (
+  < div clasName="lead">{props.children}< /div>);

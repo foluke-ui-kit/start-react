@@ -29,6 +29,9 @@
   "plugins": [
     "react"
   ],
-  
-  "extends": "airbnb"
+
+  "extends": "airbnb",
+  "rules": {
+    "no-var": 1
+  }
 }

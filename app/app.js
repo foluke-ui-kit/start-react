@@ -1,9 +1,9 @@
 webpackJsonp([0],{
 
 /***/ 0:
-/*!******************************!*\
-  !*** ./public/components.js ***!
-  \******************************/
+/*!***********************!*\
+  !*** ./public/app.js ***!
+  \***********************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83,24 +83,6 @@ webpackJsonp([0],{
 	    _React$Component.apply(this, arguments);
 	  }
 	
-	  /**
-	   * Rect stateless components
-	   */
-	
-	  // export const Button = ({
-	  //   children = 'Sample Button',
-	  // }) => (
-	  //   <button className="btn btn-info">
-	  //     {children}
-	  //   </button>
-	  // );
-	  //
-	  // export const Container = (props) => (
-	  //   <div clasName="lead">
-	  //     {props.children}
-	  //   </div>
-	  // );
-	
 	  Component.prototype.render = function render() {
 	    return _react2['default'].createElement(
 	      'aside',
@@ -169,9 +151,7 @@ webpackJsonp([0],{
 	  return _react2['default'].createElement(
 	    'button',
 	    { className: 'btn btn-info' },
-	    ' ',
-	    children,
-	    ' '
+	    children
 	  );
 	};
 	
@@ -180,9 +160,7 @@ webpackJsonp([0],{
 	  return _react2['default'].createElement(
 	    'div',
 	    { clasName: 'lead' },
-	    ' ',
-	    props.children,
-	    ' '
+	    props.children
 	  );
 	};
 	exports.Container = Container;
@@ -190,4 +168,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=sample.js.map
+//# sourceMappingURL=app.js.map
