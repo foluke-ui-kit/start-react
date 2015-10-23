@@ -10,24 +10,6 @@
 import React from 'react';
 
 /**
- * Rect stateless components
- */
-
-export const Button = ({
-  children = 'Sample Button'
-}) => (
-  <button className="btn btn-info">
-    {children}
-  </button>
-);
-
-export const Container = (props) => (
-  <div clasName="lead">
-    {props.children}
-  </div>
-);
-
-/**
  * Basic sample component displays a title and lorem paragraph
  */
 export default class Component extends React.Component {
@@ -51,3 +33,21 @@ export default class Component extends React.Component {
     );
   }
 }
+
+/**
+ * Rect stateless components
+ */
+
+export const Button = ({
+  children = 'Sample Button'
+}) => (
+  <button className="btn btn-info">
+    {children}
+  </button>
+);
+
+export const Container = (props) => (
+  <div clasName="lead">
+    {props.children}
+  </div>
+);

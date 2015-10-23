@@ -52,44 +52,20 @@ webpackJsonp([0],{
 	 * @type {*|exports}
 	 */
 	
-	'use strict';
+	"use strict";
 	
 	exports.__esModule = true;
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	/**
-	 * Rect stateless components
-	 */
-	
-	var Button = function Button(_ref) {
-	  var _ref$children = _ref.children;
-	  var children = _ref$children === undefined ? 'Sample Button' : _ref$children;
-	  return _react2['default'].createElement(
-	    'button',
-	    { className: 'btn btn-info' },
-	    children
-	  );
-	};
-	
-	exports.Button = Button;
-	var Container = function Container(props) {
-	  return _react2['default'].createElement(
-	    'div',
-	    { clasName: 'lead' },
-	    props.children
-	  );
-	};
-	
-	exports.Container = Container;
 	/**
 	 * Basic sample component displays a title and lorem paragraph
 	 */
@@ -103,41 +79,64 @@ webpackJsonp([0],{
 	    _React$Component.apply(this, arguments);
 	  }
 	
+	  /**
+	   * Rect stateless components
+	   */
+	
 	  Component.prototype.render = function render() {
-	    return _react2['default'].createElement(
-	      'aside',
-	      { className: 'hello-component' },
-	      _react2['default'].createElement(
-	        'h3',
+	    return _react2["default"].createElement(
+	      "aside",
+	      { className: "hello-component" },
+	      _react2["default"].createElement(
+	        "h3",
 	        null,
-	        'A Sample Component'
+	        "A Sample Component"
 	      ),
-	      _react2['default'].createElement(
-	        'p',
+	      _react2["default"].createElement(
+	        "p",
 	        null,
-	        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias. Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!'
+	        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias. Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!"
 	      ),
-	      _react2['default'].createElement(
-	        'p',
+	      _react2["default"].createElement(
+	        "p",
 	        null,
-	        _react2['default'].createElement(Button, { children: 'Component Button' })
+	        _react2["default"].createElement(Button, { children: "Component Button" })
 	      ),
-	      _react2['default'].createElement(
+	      _react2["default"].createElement(
 	        Container,
 	        null,
-	        _react2['default'].createElement(
-	          'p',
-	          { className: 'lead' },
-	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quibusdam excepturi saepe et hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium!'
+	        _react2["default"].createElement(
+	          "p",
+	          { className: "lead" },
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quibusdam excepturi saepe et hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium!"
 	        )
 	      )
 	    );
 	  };
 	
 	  return Component;
-	})(_react2['default'].Component);
+	})(_react2["default"].Component);
 	
-	exports['default'] = Component;
+	exports["default"] = Component;
+	var Button = function Button(_ref) {
+	  var _ref$children = _ref.children;
+	  var children = _ref$children === undefined ? 'Sample Button' : _ref$children;
+	  return _react2["default"].createElement(
+	    "button",
+	    { className: "btn btn-info" },
+	    children
+	  );
+	};
+	
+	exports.Button = Button;
+	var Container = function Container(props) {
+	  return _react2["default"].createElement(
+	    "div",
+	    { clasName: "lead" },
+	    props.children
+	  );
+	};
+	exports.Container = Container;
 
 /***/ }
 
