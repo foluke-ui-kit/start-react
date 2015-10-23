@@ -8,6 +8,7 @@
  */
 
 import React from 'react';
+import { Button, Container} from './samples/button-component';
 
 /**
  * Basic sample component displays a title and lorem paragraph
@@ -38,16 +39,16 @@ export default class Component extends React.Component {
  * Rect stateless components
  */
 
-export const Button = ({
-  children = 'Sample Button'
-}) => (
-  <button className="btn btn-info">
-    {children}
-  </button>
-);
-
-export const Container = (props) => (
-  <div clasName="lead">
-    {props.children}
-  </div>
-);
+// export const Button = ({
+//   children = 'Sample Button',
+// }) => (
+//   <button className="btn btn-info">
+//     {children}
+//   </button>
+// );
+//
+// export const Container = (props) => (
+//   <div clasName="lead">
+//     {props.children}
+//   </div>
+// );

@@ -5,10 +5,10 @@
 /**
  * Rect stateless components
  */
-// import React from 'react';
+import React from 'react';
 
 export const Button = ({
-children = 'Sample Button'
+children = 'Sample Button',
 }) => (< button className = "btn btn-info" > {
   children
 } < /button>);
