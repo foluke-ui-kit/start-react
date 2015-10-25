@@ -11,19 +11,22 @@ const nodeModulesDirectory = path.resolve(__dirname, 'node_modules');
 const commonsPlugin = new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js');
 const uglifyPlugin = new UglifyJsPlugin({minimize: true });
 
-const basePlugins = [commonsPlugin];
-const exts = '.js';
-const outputPath = './app/';
+var basePlugins = [commonsPlugin];
+var exts = '.js';
+var outputPath = './app/';
+var entryFile = './public/app.jsx';
 
 if (env === 'build') {
   basePlugins = [commonsPlugin, uglifyPlugin];
   exts = '.min.js';
   outputPath = './dist/';
+  entryFile = './src/index.jsx';
+  //  console.log('building.....');
 }
 
 module.exports = {
   entry: {
-    app: './public/app.js',
+    app: entryFile,
     // Since react is installed as a node module, node_modules/react,
     // we can point to it directly, just like require('react');
     vendors: ['react', 'react-dom'],
@@ -35,7 +38,7 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /(\.jsx|\.js)$/,
+      test: /\.jsx$/,
       exclude: [nodeModulesDirectory],
       loader: 'babel',
     }, {
@@ -48,7 +51,7 @@ module.exports = {
       test: /\.(png|jpg)$/,
       loader: 'url-loader?limit=8192',
     }, {
-      test: /(\.jsx|\.js)$/,
+      test: /\.jsx$/,
       loader: 'eslint-loader',
       exclude: /node_modules/,
     }],

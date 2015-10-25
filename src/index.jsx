@@ -6,7 +6,7 @@
  *
  * @type {*|exports}
  */
-import Styles from './style.css';
+// import Styles from './style.css';
 import React from 'react';
 import { Button, Container} from './samples/button-component';
 
