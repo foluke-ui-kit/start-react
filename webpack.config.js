@@ -11,9 +11,9 @@ const nodeModulesDirectory = path.resolve(__dirname, 'node_modules');
 const commonsPlugin = new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js');
 const uglifyPlugin = new UglifyJsPlugin({minimize: true });
 
-var basePlugins = [commonsPlugin];
-var exts = '.js';
-var outputPath = './app/';
+const basePlugins = [commonsPlugin];
+const exts = '.js';
+const outputPath = './app/';
 
 if (env === 'build') {
   basePlugins = [commonsPlugin, uglifyPlugin];

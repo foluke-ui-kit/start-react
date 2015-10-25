@@ -6,21 +6,22 @@
  *
  * @type {*|exports}
  */
-
+import Styles from './style.css';
 import React from 'react';
 import { Button, Container} from './samples/button-component';
+
 
 /**
  * Basic sample component displays a title and lorem paragraph
  */
-export default class Component extends React.Component {
+export default class extends React.Component {
 
   render() {
     return (
 
       <aside className="hello-component">
-        <h3>A Sample Component</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias. Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!</p>
+        <h3>A Sample App</h3>
+        <p className="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est fugit, maxime molestias. Aliquid culpa dolor doloribus dolorum, eaque fuga illo inventore magni nemo non!</p>
         <p>
           <Button children="Component Button"/>
           </p>

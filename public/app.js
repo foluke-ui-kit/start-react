@@ -2,17 +2,13 @@
  * Created by shawnsandy on 6/4/15.
  */
 
-
-/**
- * webpack compiled components sample file
- */
-
-// import the react component
+// import the react/dom components
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sample from'../src/index.js';
+// reaname App to Sample on import
+import {default as App} from '../src/index.js';
+// import the export as named
 import { Button } from '../src/samples/button-component';
-
-// render the main component
-ReactDOM.render(<Sample />, document.getElementById('component'));
+// render out the components
+ReactDOM.render(<App />, document.getElementById('component'));
 ReactDOM.render(<Button />, document.getElementById('button'));
