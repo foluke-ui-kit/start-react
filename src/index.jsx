@@ -8,8 +8,7 @@
  */
 // import Styles from './style.css';
 import React from 'react';
-import { Button, Container} from './samples/button-component';
-
+import { Button, Container} from './components/button-component';
 
 /**
  * Basic sample component displays a title and lorem paragraph

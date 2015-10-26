@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 // reaname App to Sample on import
 import {default as App} from '../src/index';
 // import the export as named
-import { Button } from '../src/samples/button-component';
+import { Button } from '../src/components/button-component';
 // render out the components
 ReactDOM.render(<App />, document.getElementById('component'));
 ReactDOM.render(<Button />, document.getElementById('button'));
