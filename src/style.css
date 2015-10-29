@@ -1,3 +1,10 @@
 .large {
   font-size: 24;
 }
+.text {
+  color: blue;
+  font-weight: 24px;
+}
+.text:hover {
+  color: #f60;
+}
