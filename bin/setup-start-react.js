@@ -7,7 +7,6 @@ const inquirer = require('inquirer');
 const fs = require('fs-extra');
 
 
-
 const questions = [{
   type: 'list',
   name: 'component_name',
@@ -39,9 +38,15 @@ function replaceMents(key, value) {
   // console.log(vf);
 }
 
+function copyPkg(file, dest) {
+  fs.copy(file, dest, function(err) {
+    if (err) return console.error(err);
+  });
+}
+
 inquirer.prompt(questions, function(answers) {
   // console.log(answers);
-
+  copyPkg('./package.json', './_package.json');
   if (answers.name) {
     console.log(answers.name + ' -- ' + answers.component_name);
     // replace(pkg.name, answers.name, 'package.json');

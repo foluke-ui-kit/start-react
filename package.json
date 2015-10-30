@@ -4,7 +4,7 @@
   "description": "Start react development here...",
   "main": "src/libs/index.js",
   "bin": {
-    "new-react-component": "bin/new-react-component.js"
+    "myname-react-component": "bin/myname-react-component.js"
   },
   "scripts": {
     "preinstall": "npm -v & bower -v",
@@ -19,7 +19,8 @@
     "version:patch": "npm version patch && git push --tags",
     "liveview": "browser-sync start --config bs-config.js",
     "updates": "npm update && bower update",
-    "setup-react-start": "npm link"
+    "setup-start-react": "node bin/setup-start-react.js",
+    "backup-start-react": "node bin/start-react-backup.js"
   },
   "repository": {
     "type": "git",
@@ -56,6 +57,7 @@
     "node-libs-browser": "^0.5.2",
     "object-assign": "^2.0.0",
     "react-style": "^0.5.5",
+    "replace-project-meta": "^0.1.0",
     "replacestream": "^4.0.0",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
