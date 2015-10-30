@@ -9,4 +9,4 @@ function backup(file) {
   process.stdout.write('\n backup' + file + ' completed');
 }
 
-backup('./package.json', './backups/package.json');
+backup('./package.json');
