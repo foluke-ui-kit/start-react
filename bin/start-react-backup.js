@@ -1,12 +1,12 @@
-// const inquirer = require('inquirer');
 
 const fs = require('fs-extra');
+const backupDir = './backups/';
 
-function backup(file, destination) {
-  fs.copy(file, destination, function(err) {
+function backup(file) {
+  fs.copy(file, backupDir + file, function(err) {
     if (err) return console.error(err);
   });
-  console.log('backup' + file + ' completed');
+  process.stdout.write('\n backup' + file + ' completed');
 }
 
-backup('./package.json', './backups/_package.json');
+backup('./package.json', './backups/package.json');
