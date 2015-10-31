@@ -1,5 +1,5 @@
 {
-  "name": "ChangePackageName",
+  "name": "new-name",
   "version": "0.5.0",
   "description": "Start react development here...",
   "main": "src/libs/index.js",
@@ -7,6 +7,7 @@
     "myname-react-component": "bin/myname-react-component.js"
   },
   "scripts": {
+    "preinstall": "npm -v & bower -v",
     "preversion": "npm run build",
     "postversion": "git push --tags && npm run git-push",
     "dev": "browser-sync start --config bs-config.js & WEBPACK_ENV=dev webpack -d",
@@ -18,7 +19,7 @@
     "version:patch": "npm version patch && git push --tags",
     "liveview": "browser-sync start --config bs-config.js",
     "updates": "npm update && bower update",
-    "setup-start-react": "node bin/setup-start-react.js",
+    "setup-start-react": "node bin/start-react-backup.js && node bin/setup-start-react.js",
     "backup-start-react": "node bin/start-react-backup.js"
   },
   "repository": {
