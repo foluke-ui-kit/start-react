@@ -23,8 +23,7 @@ const questions = [{
   filter: function(val) {
     return val.toLowerCase();
   }
-},
-{
+}, {
   type: 'input',
   name: 'name',
   message: 'Enter the name of your component',
@@ -35,14 +34,14 @@ const questions = [{
 
 function replaceMents(key, value, file) {
   fs.createReadStream('./backups/' + file)
-  .pipe(replace(key, value))
-  .pipe(fs.createWriteStream('./' + file));
+    .pipe(replace(key, value))
+    .pipe(fs.createWriteStream('./' + file));
 }
 
 
-function prompter(){
+function prompter() {
   inquirer.prompt(confirmSetup, function(confirmed) {
-  //  console.log(confirmed.setup);
+    //  console.log(confirmed.setup);
     if (confirmed.setup) {
       // see readme console errors
       console.log('*************************************************************')
@@ -58,7 +57,14 @@ function prompter(){
           replaceMents(pkg.name, answers.name, 'package.json');
           replaceMents(bower.name, answers.name, 'bower.json');
         }
+        // create a config file
+        fs.writeJson('./' + answers.name + '.config.json',
+        answers,
+        function(err) {
+          console.log(err)
+        })
       });
+
     }
 
   });
