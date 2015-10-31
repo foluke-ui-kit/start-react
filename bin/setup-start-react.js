@@ -32,18 +32,15 @@ const questions = [{
   type: 'input',
   name: 'name',
   message: 'Enter the name of your component',
+  default: function() {
+    return 'startreact';
+  },
 }];
 
 function replaceMents(key, value, file) {
-  fs.createReadStream(file)
+  fs.createReadStream('./backups/' + file)
   .pipe(replace(key, value))
-  .pipe(fs.createWriteStream(file));
-}
-
-function copyPkg(file, dest) {
-  fs.copy(file, dest, function(err) {
-    if (err) return;
-  });
+  .pipe(fs.createWriteStream('./' + file));
 }
 
 inquirer.prompt(confirmSetup, function(confirmed) {
@@ -58,8 +55,8 @@ inquirer.prompt(confirmSetup, function(confirmed) {
     // copyPkg('./package.json', './_package.json');
     if (answers.name) {
       process.stdout.write(answers.name + ' -- ' + answers.component_name);
-      replaceMents(pkg.name, answers.name, './package.json');
-      replaceMents(bower.name, answers.name, './bower,json');
+      replaceMents(pkg.name, answers.name, 'package.json');
+      replaceMents(bower.name, answers.name, 'bower.json');
     }
   });
 });
