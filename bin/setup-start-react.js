@@ -9,7 +9,7 @@ const fs = require('fs-extra');
 const confirmSetup = [{
   type: 'confirm',
   name: 'setup',
-  message: 'Is package.json file opened in your editor?',
+  message: 'Is the package.json file opened in your editor?',
 }];
 const questions = [{
   type: 'list',
@@ -48,8 +48,7 @@ inquirer.prompt(confirmSetup, function(confirmed) {
 //  console.log(confirmed.setup);
   if (confirmed.setup) {
     // see readme console log error
-    console.log('Please close package.json before you continue');
-    // process.stdout.write('Please close package.json before you continue');
+    console.log('Please close the package.json before you continue');
     return;
   }
   inquirer.prompt(questions, function(answers) {
@@ -57,7 +56,6 @@ inquirer.prompt(confirmSetup, function(confirmed) {
     copyPkg('./package.json', './_package.json');
     if (answers.name) {
       process.stdout.write(answers.name + ' -- ' + answers.component_name);
-      // replace(pkg.name, answers.name, 'package.json');
       replaceMents(pkg.name, answers.name);
     }
   });
