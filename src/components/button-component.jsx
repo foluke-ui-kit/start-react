@@ -7,7 +7,7 @@
  */
 import React from 'react';
 
-export const Button = ({children = 'Sample Button',
+export const Button = ({children = 'Sample Button'
 }) => (
   < button className="btn btn-info">{children}< /button>);
 

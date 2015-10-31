@@ -29,36 +29,36 @@ module.exports = {
     app: entryFile,
     // Since react is installed as a node module, node_modules/react,
     // we can point to it directly, just like require('react');
-    vendors: ['react', 'react-dom'],
+    vendors: ['react', 'react-dom']
   },
   output: {
     path: outputPath,
     filename: '[name]' + exts,
-    publicPath: './src/libs/',
+    publicPath: './src/libs/'
   },
   module: {
     loaders: [{
       test: /\.jsx$/,
       exclude: [nodeModulesDirectory],
-      loader: 'babel',
+      loader: 'babel'
     }, {
       test: /\.less$/,
-      loader: 'style-loader!css-loader!less',
+      loader: 'style-loader!css-loader!less'
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader',
+      loader: 'style-loader!css-loader'
     }, {
       test: /\.(png|jpg)$/,
-      loader: 'url-loader?limit=8192',
+      loader: 'url-loader?limit=8192'
     }, {
       test: /\.jsx$/,
       loader: 'eslint-loader',
-      exclude: /node_modules/,
-    }],
+      exclude: /node_modules/
+    }]
   },
   watch: true,
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx'],
+    extensions: ['', '.js', '.json', '.jsx']
   },
-  plugins: basePlugins,
+  plugins: basePlugins
 };

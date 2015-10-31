@@ -11,7 +11,7 @@ const fs = require('fs-extra');
 const confirmSetup = [{
   type: 'confirm',
   name: 'setup',
-  message: 'Is the package.json file opened in your editor?',
+  message: 'Is the package.json file opened in your editor?'
 }];
 const questions = [{
   type: 'list',
@@ -20,21 +20,21 @@ const questions = [{
   choices: ['ES5', 'ES6', 'Statless Component', 'ES6 Class', 'ES6 Class +'],
   filter: function(val) {
     return val.toLowerCase();
-  },
+  }
 }, {
   type: 'input',
   name: 'directory',
   message: 'Please enter the name of the directory, leave blank to use the default',
   default: function() {
     return 'false';
-  },
+  }
 }, {
   type: 'input',
   name: 'name',
   message: 'Enter the name of your component',
   default: function() {
     return 'startreact';
-  },
+  }
 }];
 
 function replaceMents(key, value, file) {
@@ -51,7 +51,7 @@ inquirer.prompt(confirmSetup, function(confirmed) {
     return;
   }
   inquirer.prompt(questions, function(answers) {
-      // process.stdout.write(answers);
+    // process.stdout.write(answers);
     // copyPkg('./package.json', './_package.json');
     if (answers.name) {
       process.stdout.write(answers.name + ' -- ' + answers.component_name);

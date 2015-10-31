@@ -1,9 +1,7 @@
 #! /usr/bin/env node
 
-console.log('console output');
-
-var inquirer = require("inquirer");
-var questions = [
+const inquirer = require("inquirer");
+const questions = [
   {
     type: "confirm",
     name: "bacon",
