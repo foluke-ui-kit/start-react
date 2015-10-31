@@ -1,5 +1,7 @@
 const pkg = require('../package.json');
 
+const bower = require('../bower.json');
+
 const replace = require('replacestream');
 
 const inquirer = require('inquirer');
@@ -32,10 +34,10 @@ const questions = [{
   message: 'Enter the name of your component',
 }];
 
-function replaceMents(key, value) {
-  fs.createReadStream('./_package.json')
+function replaceMents(key, value, file) {
+  fs.createReadStream(file)
   .pipe(replace(key, value))
-  .pipe(fs.createWriteStream('./package.json'));
+  .pipe(fs.createWriteStream(file));
 }
 
 function copyPkg(file, dest) {
@@ -53,10 +55,11 @@ inquirer.prompt(confirmSetup, function(confirmed) {
   }
   inquirer.prompt(questions, function(answers) {
       // process.stdout.write(answers);
-    copyPkg('./package.json', './_package.json');
+    // copyPkg('./package.json', './_package.json');
     if (answers.name) {
       process.stdout.write(answers.name + ' -- ' + answers.component_name);
-      replaceMents(pkg.name, answers.name);
+      replaceMents(pkg.name, answers.name, './package.json');
+      replaceMents(bower.name, answers.name, './bower,json');
     }
   });
 });
