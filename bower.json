@@ -1,5 +1,5 @@
 {
-  "name": "frontend-ui",
+  "name": "start-react",
   "version": "0.2.3",
   "homepage": "https://github.com/sgkit/frontend-ui",
   "authors": [
@@ -25,10 +25,15 @@
   "ignore": [
     "node_modules",
     "bower_components",
+    "packages",
     "test",
     "tests",
     ".idea",
-    "src"
+    "src",
+    "app",
+    "bin",
+    "public",
+    "backups"
   ],
   "dependencies": {
     "bootstrap": "~3.3.0",

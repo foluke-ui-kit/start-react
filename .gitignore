@@ -4,3 +4,4 @@ src/apps
 packages
 terminal.glue
 *.map
+backups
