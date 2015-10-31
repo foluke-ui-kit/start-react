@@ -32,7 +32,8 @@
     "src",
     "app",
     "bin",
-    "public"
+    "public",
+    "backups"
   ],
   "dependencies": {
     "bootstrap": "~3.3.0",
