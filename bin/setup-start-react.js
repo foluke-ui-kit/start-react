@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const pkg = require('../package.json');
 
 const bower = require('../bower.json');
@@ -11,7 +13,7 @@ const fs = require('fs-extra');
 const confirmSetup = [{
   type: 'confirm',
   name: 'setup',
-  message: 'Is the package.json file opened in your editor?'
+  message: 'Are any of these files package.json, README.md or bower.json opened in your editor?'
 }];
 const questions = [{
   type: 'list',
@@ -21,14 +23,8 @@ const questions = [{
   filter: function(val) {
     return val.toLowerCase();
   }
-}, {
-  type: 'input',
-  name: 'directory',
-  message: 'Please enter the name of the directory, leave blank to use the default',
-  default: function() {
-    return 'false';
-  }
-}, {
+},
+{
   type: 'input',
   name: 'name',
   message: 'Enter the name of your component',
@@ -43,20 +39,29 @@ function replaceMents(key, value, file) {
   .pipe(fs.createWriteStream('./' + file));
 }
 
-inquirer.prompt(confirmSetup, function(confirmed) {
-//  console.log(confirmed.setup);
-  if (confirmed.setup) {
-    // see readme console log error
-    console.log('Please close the package.json before you continue');
-    return;
-  }
-  inquirer.prompt(questions, function(answers) {
-    // process.stdout.write(answers);
-    // copyPkg('./package.json', './_package.json');
-    if (answers.name) {
-      process.stdout.write(answers.name + ' -- ' + answers.component_name);
-      replaceMents(pkg.name, answers.name, 'package.json');
-      replaceMents(bower.name, answers.name, 'bower.json');
+
+function prompter(){
+  inquirer.prompt(confirmSetup, function(confirmed) {
+  //  console.log(confirmed.setup);
+    if (confirmed.setup) {
+      // see readme console errors
+      console.log('*************************************************************')
+      console.log('\n Please close any of these open file(s) to continue - package.json, README.md or bower.json \n');
+      console.log('*************************************************************')
+      prompter();
+    } else {
+      inquirer.prompt(questions, function(answers) {
+        // process.stdout.write(answers);
+        // copyPkg('./package.json', './_package.json');
+        if (answers.name) {
+          process.stdout.write(answers.name + ' -- ' + answers.component_name);
+          replaceMents(pkg.name, answers.name, 'package.json');
+          replaceMents(bower.name, answers.name, 'bower.json');
+        }
+      });
     }
+
   });
-});
+}
+
+prompter();
