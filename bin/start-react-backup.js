@@ -7,9 +7,11 @@ function backup(file) {
     if (err) process.stdout.write('Error saving files');
     return;
   });
-  process.stdout.write('\n backup' + file + ' completed');
+  process.stdout.write('backup' + file + ' completed \n');
 }
-
+/**
+ * backup files here
+ */
 backup('./package.json');
-
 backup('./README.md');
+backup('./bower.json');
