@@ -11,3 +11,5 @@ function backup(file) {
 }
 
 backup('./package.json');
+
+backup('./README.md');
