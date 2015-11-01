@@ -1,7 +1,7 @@
 {
   "name": "startreact",
   "version": "0.5.0",
-  "description": "Start react development here...",
+  "description": "start react development here...",
   "main": "src/libs/index.js",
   "bin": {
     "myname-react-component": "bin/myname-react-component.js"
@@ -24,17 +24,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/foluke-ui-kit/start-react.git"
+    "url": "start react.git"
   },
   "keywords": [
     "react"
   ],
-  "author": "shawn sandy",
+  "author": "start react",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/foluke-ui-kit/start-react/issues"
+    "url": "start react/issues"
   },
-  "homepage": "https://github.com/foluke-ui-kit/start-react",
+  "homepage": "start react",
   "devDependencies": {
     "babel-core": "^5.8.25",
     "babel-eslint": "^4.1.3",

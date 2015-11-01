@@ -15,7 +15,7 @@ console.log(pkg.repository.type)
 const confirmSetup = [{
   type: 'confirm',
   name: 'setup',
-  message: 'Are any of these files package.json, README.md or bower.json opened in your editor?'
+  message: 'Are all of the following files  --package.json, README.md or bower.json closed in your editor?'
 }];
 const questions = [
   {
@@ -44,7 +44,7 @@ const questions = [
   name: 'author',
   message: 'Authors name?',
   default: function() {
-    return 'https://github.com/foluke-ui-kit/start-react'
+    return 'start react'
   }
 }, {
   type: 'input',
@@ -65,27 +65,36 @@ function replaceMents(key, value, file) {
 function prompter() {
   inquirer.prompt(confirmSetup, function(confirmed) {
     //  console.log(confirmed.setup);
-    if (confirmed.setup) {
+    if (!confirmed.setup) {
       // see readme console errors
-      console.log('*************************************************************');
+
       console.log('\n Please close any of these open file(s) to continue - package.json, README.md or bower.json \n');
-      console.log('*************************************************************');
+
       prompter();
     } else {
       inquirer.prompt(questions, function(answers) {
-        // process.stdout.write(answers)
-        //generate package.json replacements
+        // setup package.json replacements
         fs.createReadStream('./backups/package.json')
           .pipe(replace(pkg.name, answers.name ))
           .pipe(replace(pkg.author, answers.author ))
           .pipe(replace(pkg.homepage, answers.github_url ))
+          .pipe(replace(pkg.repository.url, answers.github_url +'.git' ))
+          .pipe(replace(pkg.bugs.url, answers.github_url +'/issues' ))
           .pipe(fs.createWriteStream('./package.json'));
+
+        // setup bower
+        fs.createReadStream('./backups/bower.json')
+          .pipe(replace(bower.name, answers.name ))
+          .pipe(replace(bower.homepage, answers.github_url ))
+          .pipe(fs.createWriteStream('./bower.json'));
+
+        // setup readme
 
         // create a config file
         fs.writeJson('./' + answers.name + '.config.json',
         answers,
         function(err) {
-          console.log(err)
+          if (err) console.log(err)
         })
       });
 
