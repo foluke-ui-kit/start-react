@@ -46,13 +46,6 @@ const questions = [
   default: function() {
     return 'start react'
   }
-}, {
-  type: 'input',
-  name: 'email',
-  message: 'Project / author email address?',
-  default: function() {
-    return ''
-  }
 }];
 
 function replaceMents(key, value, file) {
@@ -89,6 +82,9 @@ function prompter() {
           .pipe(fs.createWriteStream('./bower.json'));
 
         // TODO setup readme.md
+        fs.createReadStream('./backups/README.md')
+          .pipe(replace('Project Name', answers.display_name ))
+          .pipe(fs.createWriteStream('./README.md'));
 
         // create a config file
         fs.writeJson('./' + answers.name + '.config.json',
