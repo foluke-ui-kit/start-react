@@ -32,6 +32,8 @@
 
   "extends": "defaults/configurations/eslint",
   "rules": {
-    "no-var": 1
+    "no-var": 1,
+    "react/jsx-quotes": 0,
+    "jsx-quotes": [2, "prefer-double"]
   }
 }

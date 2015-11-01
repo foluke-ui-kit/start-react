@@ -10,8 +10,6 @@ const inquirer = require('inquirer');
 
 const fs = require('fs-extra');
 
-console.log(pkg.repository.type)
-
 const confirmSetup = [{
   type: 'confirm',
   name: 'setup',
@@ -27,14 +25,14 @@ const questions = [
   }
 }, {
   type: 'input',
-  name: 'display_name',
+  name: 'displayName',
   message: 'Enter a display name or title for you project, this goes into the README, docs etc',
   default: function() {
     return 'Start React'
   }
 }, {
   type: 'input',
-  name: 'github_url',
+  name: 'githubUrl',
   message: 'Enter your github url',
   default: function() {
     return 'https://github.com/foluke-ui-kit/start-react'
@@ -47,13 +45,6 @@ const questions = [
     return 'start react'
   }
 }];
-
-function replaceMents(key, value, file) {
-  fs.createReadStream(file)
-    .pipe(replace(key, value))
-    .pipe(fs.createWriteStream('./' + file));
-}
-
 
 function prompter() {
   inquirer.prompt(confirmSetup, function(confirmed) {
@@ -70,20 +61,20 @@ function prompter() {
         fs.createReadStream('./backups/package.json')
           .pipe(replace(pkg.name, answers.name ))
           .pipe(replace(pkg.author, answers.author ))
-          .pipe(replace(pkg.homepage, answers.github_url ))
-          .pipe(replace(pkg.repository.url, answers.github_url +'.git' ))
-          .pipe(replace(pkg.bugs.url, answers.github_url +'/issues' ))
+          .pipe(replace(pkg.homepage, answers.githubUrl ))
+          .pipe(replace(pkg.repository.url, answers.githubUrl +'.git' ))
+          .pipe(replace(pkg.bugs.url, answers.githubUrl +'/issues' ))
           .pipe(fs.createWriteStream('./package.json'));
 
         // setup bower
         fs.createReadStream('./backups/bower.json')
           .pipe(replace(bower.name, answers.name ))
-          .pipe(replace(bower.homepage, answers.github_url ))
+          .pipe(replace(bower.homepage, answers.githubUrl ))
           .pipe(fs.createWriteStream('./bower.json'));
 
         // TODO setup readme.md
         fs.createReadStream('./backups/README.md')
-          .pipe(replace('Project Name', answers.display_name ))
+          .pipe(replace('Project Name', answers.displayName ))
           .pipe(fs.createWriteStream('./README.md'));
 
         // create a config file
