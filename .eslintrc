@@ -30,7 +30,7 @@
     "react"
   ],
 
-  "extends": "airbnb",
+  "extends": "defaults/configurations/eslint",
   "rules": {
     "no-var": 1
   }

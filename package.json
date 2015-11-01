@@ -1,7 +1,7 @@
 {
-  "name": "new-name",
+  "name": "startreact",
   "version": "0.5.0",
-  "description": "Start react development here...",
+  "description": "https://github.com/foluke-ui-kit/start-react development here...",
   "main": "src/libs/index.js",
   "bin": {
     "myname-react-component": "bin/myname-react-component.js"
@@ -29,7 +29,7 @@
   "keywords": [
     "react"
   ],
-  "author": "shawn sandy",
+  "author": "https://github.com/foluke-ui-kit/start-react",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/foluke-ui-kit/start-react/issues"
