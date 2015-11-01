@@ -88,7 +88,7 @@ function prompter() {
           .pipe(replace(bower.homepage, answers.github_url ))
           .pipe(fs.createWriteStream('./bower.json'));
 
-        // setup readme
+        // TODO setup readme.md
 
         // create a config file
         fs.writeJson('./' + answers.name + '.config.json',
