@@ -13,7 +13,7 @@ const fs = require('fs-extra');
 const confirmSetup = [{
   type: 'confirm',
   name: 'setup',
-  message: 'Are all of the following files  --package.json, README.md or bower.json closed in your editor?'
+  message: 'Are the following files  --package.json, README.md or bower.json, all closed in your editor?'
 }];
 const questions = [
   {
@@ -52,7 +52,7 @@ function prompter() {
     if (!confirmed.setup) {
       // see readme console errors
 
-      console.log('\n Please close any of these open file(s) to continue - package.json, README.md or bower.json \n');
+    console.log('\n Please close any of these file(s) to continue - package.json, README.md or bower.json \n');
 
       prompter();
     } else {
@@ -72,7 +72,7 @@ function prompter() {
           .pipe(replace(bower.homepage, answers.githubUrl ))
           .pipe(fs.createWriteStream('./bower.json'));
 
-        // TODO setup readme.md
+        // setup readme.md
         fs.createReadStream('./backups/README.md')
           .pipe(replace('Project Name', answers.displayName ))
           .pipe(fs.createWriteStream('./README.md'));
