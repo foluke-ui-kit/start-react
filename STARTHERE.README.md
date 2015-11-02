@@ -44,7 +44,7 @@ Open the sample component `src/index.jsx` make the some changes and to the compo
 - `npm run dev`: Development watches for changes build with mapping - launches browsersync and webpack in watch mode.
 - `npm run liveview` : Liveview fires up BrowserSync and launches you default browser
 - `npm run webpack` : Use webpack to build and watch in production mode
-- `npm run setup-start-react` : Runs CLI interface that setups and makes changes to project name, github url, author, etc in the package/bower.json, README.md. Creates a project_name.config.json to store these variables.
+- `npm run setup-start-react` : Runs CLI interface that setups and makes changes to project name, github url, author, etc in the package/bower.json, README.md. Creates a project_name.config.json to store config variables.
 
 ### Creating components -- Get to work.
 
